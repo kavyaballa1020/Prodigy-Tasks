@@ -1,4 +1,8 @@
 /* Transparent Navbar */
+/* Background Image */
+body {
+
+}
 .navbar-transparent {
   background-color: transparent !important;
   transition: background-color 0.5s ease;
@@ -25,14 +29,18 @@
 
 /* Hero Section */
 .hero {
-  padding: 150px 0;
+  background-image: url('https://images5.alphacoders.com/430/430918.jpg');
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   color: #fff;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
+
 
 .hero::before {
   content: "";
@@ -86,7 +94,6 @@
 /* Contact Section */
 .contact {
   padding: 80px 0;
-  background-color: #f8f9fa;
 }
 
 .form-control {
@@ -99,7 +106,7 @@
 
 /* Footer */
 footer {
-  background-color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
 }
 
@@ -129,3 +136,4 @@ footer .fab {
 footer .fab:hover {
   color: #fff;
 }
+

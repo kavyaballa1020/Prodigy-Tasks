@@ -10,8 +10,8 @@
 </head>
 <body>
 
-  <!-- Transparent Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+  <!-- Transparent and Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="logo.png" alt="Coding Institute" height="30">
@@ -40,17 +40,19 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" style="background-image: url('coding-background.jpg');">
+ <!-- Hero Section -->
+<section class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1>Become a Skilled Developer</h1>
-          <p>Learn web development, programming languages, and app development from industry experts.</p>
-          <a href="#" class="btn btn-primary btn-lg">Enroll Now</a>
+        <div class="col-md-6 mx-auto text-center">
+          <h1 class="animated fadeInDown">Become a Skilled Developer</h1>
+          <p class="animated fadeInUp">Learn web development, programming languages, and app development from industry experts.</p>
+          <a href="#" class="btn btn-primary btn-lg animated pulse infinite delay-2s">Enroll Now</a>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- Services Section -->
   <section class="services">
