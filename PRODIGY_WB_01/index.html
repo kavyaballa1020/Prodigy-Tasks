@@ -3,47 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPL Landing Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Coding Institute</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Menu -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+
+  <!-- Transparent Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
     <div class="container">
-      <a class="navbar-brand" href="#">IPL</a>
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Coding Institute" height="30">
+        Coding Institute
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero-section">
+  <section class="hero" style="background-image: url('coding-background.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1>Welcome to IPL</h1>
-          <p>Experience the thrill of the Indian Premier League.</p>
-          <button class="btn btn-primary">Get Started</button>
+          <h1>Become a Skilled Developer</h1>
+          <p>Learn web development, programming languages, and app development from industry experts.</p>
+          <a href="#" class="btn btn-primary btn-lg">Enroll Now</a>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Scripts -->
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card service-card">
+            <div class="card-body">
+              <i class="fas fa-code fa-3x mb-3"></i>
+              <h5 class="card-title">Software Development</h5>
+              <p class="card-text">Develop high-quality software solutions tailored to your business needs. Our experienced developers will guide you through the entire process.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card service-card">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+              <h5 class="card-title">App Development</h5>
+              <p class="card-text">Create engaging and user-friendly mobile apps for iOS and Android platforms. Our team will help you build apps that stand out.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card service-card">
+            <div class="card-body">
+              <i class="fas fa-globe fa-3x mb-3"></i>
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Build responsive and modern websites using the latest web technologies. Our web developers will ensure your online presence is top-notch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>We are a leading coding institute dedicated to providing high-quality education in web development, programming languages, and app development.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Connect With Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 Coding Institute. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
