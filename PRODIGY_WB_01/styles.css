@@ -323,21 +323,21 @@ button.github:hover{
 
 @media (max-width: 768px) {
   .service-card {
-    width: calc(100% - 20px); /* Adjust the width of each card */
-    margin-bottom: 10px; /* Add some space between the cards */
-    height:200px; /* Allow the height to adjust based on content */
-    display: block; /* Ensure each card appears on its own line */
+    width: calc(100% - 20px); 
+    margin-bottom: 10px; 
+    height:200px; 
+    display: block; 
     font-size:xx-small;
     padding: 0px ;
     margin: 0px;
     text-align: left;
   }
     .services {
-      padding-top: 15px !important; /* Adjust the top padding to your desired value */
+      padding-top: 15px !important; 
     }
       .navbar-nav {
         margin-left: auto;
-        padding-right: 15px; /* Add padding to the right side of the navbar */
+        padding-right: 15px; 
       }
     
       .nav-link {
@@ -350,7 +350,7 @@ button.github:hover{
         padding-left: 20px !important;
       }
       .navbar-toggler {
-        padding: 0.25rem 0.75rem; /* Adjust the padding of the toggle button */
+        padding: 0.25rem 0.75rem; 
       }
     
     
@@ -358,21 +358,21 @@ button.github:hover{
     font-size:4px;
   }
   .service-card i {
-    font-size: 18px; /* Adjust the font size of the icons */
+    font-size: 18px;
   }
   .mb-5 {
-    margin-bottom: 10px !important; /* Adjust the margin bottom to your desired value */
+    margin-bottom: 10px !important; 
   }
   .service-card h5 {
-    font-size: 18px; /* Adjust the font size of the service title */
-    margin-top: 1px; /* Decrease the top margin */
-    margin-bottom: 1px; /* Decrease the bottom margin */
+    font-size: 18px; 
+    margin-top: 1px; 
+    margin-bottom: 1px; 
   }
   
   .service-card p {
-    font-size: 12px; /* Adjust the font size of the service description */
-    margin-top: 5px; /* Decrease the top margin */
-    margin-bottom: 10px; /* Decrease the bottom margin */
+    font-size: 12px; 
+    margin-top: 5px;
+    margin-bottom: 10px; 
   }
   
 }
