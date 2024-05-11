@@ -157,7 +157,9 @@
   font-size: 20px;
   margin-bottom: 30px;
 }
-
+.service{
+  color: white;
+}
 .service-card {
   border: none;
   border-radius: 10px;
@@ -318,34 +320,42 @@ button.github:hover{
   background-color: #000;
   color: #ffff;
 }
+
 @media (max-width: 768px) {
   .service-card {
     width: calc(100% - 20px); /* Adjust the width of each card */
-    margin-bottom: 20px; /* Add some space between the cards */
+    margin-bottom: 10px; /* Add some space between the cards */
+    height:200px; /* Allow the height to adjust based on content */
+    display: block; /* Ensure each card appears on its own line */
+    font-size:xx-small;
+    padding: 0px ;
+    margin: 0px;
+    text-align: left;
   }
-}
-@media (max-width: 768px) {
-  .services .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Ensure equal spacing between cards */
-  }
-
     .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+      padding-top: 15px !important; /* Adjust the top padding to your desired value */
     
-    .service-card {
-      flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each card to fit three cards */
-      margin: 0 10px 20px; /* Add some space between the cards */
-    }
-
   
-
-  .contact-form {
-    z-index: 2; /* Ensure the contact form is above the cards */
-}
-
+  
+  .h2{
+    font-size:4px;
+  }
+  .service-card i {
+    font-size: 18px; /* Adjust the font size of the icons */
+  }
+  .mb-5 {
+    margin-bottom: 10px !important; /* Adjust the margin bottom to your desired value */
+  }
+  .service-card h5 {
+    font-size: 18px; /* Adjust the font size of the service title */
+    margin-top: 1px; /* Decrease the top margin */
+    margin-bottom: 1px; /* Decrease the bottom margin */
+  }
+  
+  .service-card p {
+    font-size: 12px; /* Adjust the font size of the service description */
+    margin-top: 5px; /* Decrease the top margin */
+    margin-bottom: 10px; /* Decrease the bottom margin */
+  }
+  
 }
