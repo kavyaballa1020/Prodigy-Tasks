@@ -336,7 +336,20 @@ button.github:hover{
       padding-top: 15px !important; /* Adjust the top padding to your desired value */
     
   
-  
+        .navbar {
+          padding: 0.5rem 1rem;
+        }
+      
+        .navbar-brand {
+          font-size: 1.4rem;
+          margin-right: auto;
+        }
+      
+        .nav-link {
+          font-size: 1rem !important;
+          padding: 0.5rem 1rem;
+        }
+      
   .h2{
     font-size:4px;
   }
