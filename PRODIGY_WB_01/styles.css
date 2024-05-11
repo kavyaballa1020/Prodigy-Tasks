@@ -334,22 +334,26 @@ button.github:hover{
   }
     .services {
       padding-top: 15px !important; /* Adjust the top padding to your desired value */
+    }
+      .navbar-nav {
+        margin-left: auto;
+        padding-right: 15px; /* Add padding to the right side of the navbar */
+      }
     
-  
-        .navbar {
-          padding: 0.5rem 1rem;
-        }
-      
-        .navbar-brand {
-          font-size: 1.4rem;
-          margin-right: auto;
-        }
-      
-        .nav-link {
-          font-size: 1rem !important;
-          padding: 0.5rem 1rem;
-        }
-      
+      .nav-link {
+        font-size: 15px !important;
+        padding-left: 20px !important;
+        padding-right: 10px;
+        color: orange !important;
+      }
+      .navbar-brand{
+        padding-left: 20px !important;
+      }
+      .navbar-toggler {
+        padding: 0.25rem 0.75rem; /* Adjust the padding of the toggle button */
+      }
+    
+    
   .h2{
     font-size:4px;
   }
