@@ -1,15 +1,79 @@
-body {
+/* Apply overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+}
 
+/* Animate text */
+.hero h1, .hero p, .hero .btn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add hover effect to CTA button */
+.hero .btn {
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+  background-color: #ff6600;
+}
+
+/* Add parallax effect to background */
+.hero {
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-a-3d-rendering-of-blue-matrix-background-with-digital-illustrations-representing-image_13565167.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Adjust text styles */
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* Adjust text color */
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #fff; /* Adjust text color */
+}
+
+.hero .btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 5px;
 }
 #Courses {
-  background-image: url('https://images5.alphacoders.com/430/430918.jpg');
+  background-image: url('https://i.pinimg.com/736x/28/0c/fc/280cfc33b65ecd83d31b2524046263b4.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
   padding: 100px 0; 
 }
 #contact {
-  background-image: url('https://images5.alphacoders.com/430/430918.jpg');
+  background-image: url('https://i.pinimg.com/736x/28/0c/fc/280cfc33b65ecd83d31b2524046263b4.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px 0; 
@@ -100,18 +164,20 @@ body {
 }
 /* Service Cards *//* Service Cards */
 /* Service Cards */
+/* Service Cards */
+/* Service Cards */
 .service-card {
   border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: linear-gradient(to bottom right, #3b5998, #00acee, #8a3ab9); /* Gradient background */
+  background: linear-gradient(to bottom right, #485461, #28313b); /* Gradient background */
   color: #fff;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.05); /* Lift and slightly scale on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
 }
 
 .service-card .card-body {
@@ -146,12 +212,6 @@ body {
 @keyframes pulse {
   0% { transform: scale(1); }
   100% { transform: scale(1.05); }
-}
-
-
-/* Contact Section */
-.contact {
-  padding: 80px 0;
 }
 
 .form-control {
@@ -195,3 +255,80 @@ footer .fab:hover {
   color: #fff;
 }
 
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.contact h2 {
+  font-weight: 600;
+  color: #f7fafc;
+}
+
+/* Form Styles */
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+button{
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+button.instagram:hover{
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  color: aliceblue;
+}
+button.linkedin:hover{
+  background: #0f69b3;
+  color: #ffffff;
+}
+button.facebook:hover{
+  background: #405DE6;
+  color: #ffff;
+}
+button.github:hover{
+  background-color: #000;
+  color: #ffff;
+}
