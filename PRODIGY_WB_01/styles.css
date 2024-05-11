@@ -318,3 +318,34 @@ button.github:hover{
   background-color: #000;
   color: #ffff;
 }
+@media (max-width: 768px) {
+  .service-card {
+    width: calc(100% - 20px); /* Adjust the width of each card */
+    margin-bottom: 20px; /* Add some space between the cards */
+  }
+}
+@media (max-width: 768px) {
+  .services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal spacing between cards */
+  }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .service-card {
+      flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each card to fit three cards */
+      margin: 0 10px 20px; /* Add some space between the cards */
+    }
+
+  
+
+  .contact-form {
+    z-index: 2; /* Ensure the contact form is above the cards */
+}
+
+}
