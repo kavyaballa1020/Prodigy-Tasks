@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#destinations"><i class="fas fa-map-marker-alt"></i> Destinations</a>
+                    <a class="nav-link" href="#Home"><i class="fas fa-map-marker-alt"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#packages"><i class="fas fa-suitcase"></i> Packages</a>
+                    <a class="nav-link" href="#Courses"><i class="fas fa-graduation-cap"></i> Courses </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                    <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +48,7 @@
   
 
   <!-- Services Section -->
-  <section class="services">
+  <section class="services" id="Courses">
     <div class="container">
       <h2 class="text-center mb-5">Our Services</h2>
       <div class="row">
@@ -84,7 +84,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2 class="text-center mb-5">Contact Us</h2>
       <div class="row">
@@ -145,5 +145,33 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+  
+          // Store hash
+          var hash = this.hash;
+  
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+     
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  
 </body>
 </html>

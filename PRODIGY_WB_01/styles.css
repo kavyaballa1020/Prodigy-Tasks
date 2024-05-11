@@ -3,7 +3,13 @@
 body {
 
 }
-
+#Courses {
+  background-image: url('https://images5.alphacoders.com/430/430918.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Adjust padding as needed */
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -53,7 +59,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: url('https://images5.alphacoders.com/430/430918.jpg');
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-a-3d-rendering-of-blue-matrix-background-with-digital-illustrations-representing-image_13565167.png');
+
   height: 100vh;
   background-size: cover;
   background-position: center;
