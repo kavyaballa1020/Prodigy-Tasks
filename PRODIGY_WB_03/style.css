@@ -1,6 +1,6 @@
 body {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,9 +10,8 @@ body {
 }
 
 .card {
-  background-color: #000000;
+  background-color: #050505;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
 }
 
 .square {
@@ -22,13 +21,13 @@ body {
   text-align: center;
   cursor: pointer;
   border-radius: 16px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px rgb(227, 222, 222);
   transition: transform 0.3s ease-in-out;
   line-height: 100px;
 }
 
 .square:hover {
-  background-color: rgba(18, 1, 1, 0.2);
+  background-color: rgba(255, 252, 254, 0.119);
   transform: scale(1.1);
 }
 
@@ -38,14 +37,16 @@ h1 {
   font-size: 60px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 50px;
+  color: rgb(132, 0, 255);
+  text-shadow:2px 5px rgb(240, 221, 12);
 }
 
 .highlight {
-  color: #ffc107;
+  color: #ff0707;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(219, 215, 215, 0.756);
 }
 
 .button-container {
@@ -68,3 +69,8 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+  h1{
+    font-size: 40px !important;
+  }
+}
