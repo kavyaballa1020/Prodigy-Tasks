@@ -1,33 +1,79 @@
 let currentPlayer = 'X';
 let board = ['', '', '', '', '', '', '', '', ''];
-let gameActive = false;
-let gameMode = 'normal'; // Default game mode is normal (user vs user)
+let gameActive = true;
+let isAgainstAI = false;
+
+const getRandomMove = () => {
+  return Math.floor(Math.random() * 9);
+};
+
+const makeAIMove = () => {
+  if (gameActive) {
+    let index;
+    do {
+      index = getRandomMove();
+    } while (board[index] !== '');
+    makeMove(index);
+  }
+};
 
 const checkWin = () => {
-  // Win conditions check logic remains the same
+  const winConditions = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+  ];
+
+  for (let condition of winConditions) {
+    const [a, b, c] = condition;
+    if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+      gameActive = false;
+      return board[a];
+    }
+  }
+
+  if (!board.includes('')) {
+    gameActive = false;
+    return 'draw';
+  }
+
+  return null;
 };
 
 const handleResult = (result) => {
-  // Handle result logic remains the same
+  let resultDiv = document.querySelector("#main");
+  if (result === 'draw') {
+    resultDiv.innerHTML = 'It is a Draw';
+    resultDiv.className = 'alert alert-info';
+
+  } else {
+    setStatus(`Player <span class="highlight">${result}</span> wins!`);
+  }
 };
 
 const setStatus = (message) => {
-  // Set status logic remains the same
+  document.getElementById('status').innerHTML = message;
 };
 
 const makeMove = (index) => {
-  if (gameActive && !board[index]) {
+  if (gameActive && board[index] === '') {
     board[index] = currentPlayer;
-    document.getElementsByClassName('square')[index].innerText = currentPlayer;
-    
+    document.getElementById(index).innerText = currentPlayer;
+
     const winner = checkWin();
     if (winner) {
       handleResult(winner);
     } else {
       currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
       setStatus(`Player ${currentPlayer}'s turn`);
-      if (gameMode === 'computer' && currentPlayer === 'O') {
-        setTimeout(computerMove, 500); // If playing with computer and it's computer's turn, make a move for the computer
+
+      if (isAgainstAI && currentPlayer === 'O') {
+        makeAIMove();
       }
     }
   }
@@ -41,29 +87,11 @@ const resetGame = () => {
   document.querySelectorAll('.square').forEach(square => square.innerText = '');
 };
 
-const computerMove = () => {
-  // Computer move logic remains the same
-};
-
-const playWithUser = () => {
-  gameMode = 'normal'; // Set game mode to normal (user vs user)
-  resetGame();
-};
-
-const playWithComputer = () => {
-  gameMode = 'computer'; // Set game mode to computer (user vs computer)
-  resetGame();
-  if (currentPlayer === 'O') {
-    setTimeout(computerMove, 500); // If computer starts, make a move
-  }
-};
-
-setStatus(`Player ${currentPlayer}'s turn`);
-
-document.querySelectorAll('.square').forEach((square, index) => {
-  square.addEventListener('click', () => {
-    if (gameActive) {
-      makeMove(index);
+const toggleMode = () => {
+    isAgainstAI = !isAgainstAI;
+    resetGame();
+    if (isAgainstAI && currentPlayer === 'O') {
+      makeAIMove();
     }
-  });
-});
+  };
+  
