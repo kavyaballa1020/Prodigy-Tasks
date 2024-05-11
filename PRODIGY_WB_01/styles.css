@@ -1,5 +1,3 @@
-/* Transparent Navbar */
-/* Background Image */
 body {
 
 }
@@ -8,7 +6,14 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  padding: 100px 0; /* Adjust padding as needed */
+  padding: 100px 0; 
+}
+#contact {
+  background-image: url('https://images5.alphacoders.com/430/430918.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; 
+  height:100vh;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -52,11 +57,6 @@ body {
 .nav-link:hover {
   color: #ff6600 !important;
 }
-
-
-
-
-
 /* Hero Section */
 .hero {
   background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-a-3d-rendering-of-blue-matrix-background-with-digital-illustrations-representing-image_13565167.png');
@@ -98,29 +98,56 @@ body {
   font-size: 20px;
   margin-bottom: 30px;
 }
-
-/* Services Section */
-.services {
-  padding: 80px 0;
-}
-
+/* Service Cards *//* Service Cards */
+/* Service Cards */
 .service-card {
   border: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to bottom right, #3b5998, #00acee, #8a3ab9); /* Gradient background */
+  color: #fff;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .service-card .card-body {
   text-align: center;
+  padding: 30px;
 }
 
 .service-card i {
-  color: #007bff;
+  color: #fff;
+  font-size: 48px;
 }
+
+.service-card h5 {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+/* Hover Effects */
+.service-card:hover .card-body {
+  transform: translateY(-5px);
+}
+
+.service-card:hover i {
+  animation: pulse 1s infinite alternate; /* Subtle pulsating animation on hover */
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
 
 /* Contact Section */
 .contact {
