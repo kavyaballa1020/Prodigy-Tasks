@@ -67,7 +67,7 @@ h1 {
 
 .button-container button:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(252, 249, 249, 0.571);
+  box-shadow: 0 0 10px rgba(252, 249, 249, 0.3);
 }
 
 @media (max-width: 768px) {
