@@ -11,30 +11,33 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("https://c1.wallpaperflare.com/preview/72/415/646/clouds-sky-blue-nature.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEXYveRd-mDDlqsgx5ZUnEcuuE-VyIBSWRPvJGDaTLA&s");
   background-size: cover;
   background-repeat: no-repeat;
 }
 ::selection{
   color: #fff;
-  background: #43AFFC;
+  background: #540404;
 }
 
 .wrapper{
   width: 400px;
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  color: white;
+  background: linear-gradient(to top, #010127,rgb(28, 28, 157), rgb(92, 73, 240));
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px 4px rgba(164, 165, 165, 0.366) !important;
 }
 
 .wrapper header{
   display: flex;
-  font-size: 21px;
-  font-weight: 500;
-  color: #43AFFC;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 1000;
+  color: #ffffff;  
+  padding-left: 100px !important;
   padding: 16px 15px;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1.5px solid #a5ff8e;
 }
 
 header i{
@@ -75,8 +78,11 @@ header i{
 .input-part .info-txt.pending{
   color: #0c5460;
   display: block;
-  background: #d1ecf1;
+  background: #ffffff;
   border: 1px solid #bee5eb;
+  color: #540404;
+  font-weight: 1000px;
+
 }
 
 .input-part :where(input, button){
@@ -106,7 +112,7 @@ header i{
   height: 1px;
   width: 100%;
   margin: 25px 0;
-  background: #ccc;
+  background: #adff56;
   position: relative;
   display: flex;
   align-items: center;
@@ -115,21 +121,22 @@ header i{
 
 .separator::before{
   content: "or";
-  color: #b3b3b3;
+  color: #db7a18;
   font-size: 19px;
   padding: 0 15px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .input-part button{
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: linear-gradient(to top, rgb(75, 46, 156), rgb(41, 55, 254));
   transition: 0.3s ease;
 }
 
 .input-part button:hover{
-  background: #1d9ffc;
+  background: #4000b6;
+  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.727);
 }
 
 .wrapper .weather-part{
@@ -200,7 +207,7 @@ header i{
 }
 
 .column i{
-  color: #5DBBFF;
+  color: #5decff;
   font-size: 40px;
 }
 

@@ -11,7 +11,7 @@ let api;
 
 inputField.addEventListener("keyup", e =>{
     if(e.key == "Enter" && inputField.value != ""){
-        requestApi(inputField.value); // Pass the city name to requestApi() function
+        requestApi(inputField.value);
     }
 });
 
@@ -25,11 +25,8 @@ locationBtn.addEventListener("click", () =>{
 
 function requestApi(city){
     api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=7dd1481b48844c2460c2e49e86501219`;
-    console.log("API URL:", api); // Add this line to log the API URL
     fetchData();
 }
-
-
 
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
@@ -43,7 +40,6 @@ function onError(error){
 }
 
 function fetchData(){
-    console.log("Fetching data from API:", api); // Add this line to log the API URL
     infoTxt.innerText = "Getting weather details...";
     infoTxt.classList.add("pending");
     fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
