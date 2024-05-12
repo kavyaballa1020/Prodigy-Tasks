@@ -23,3 +23,4 @@ This repository contains my solutions to the tasks assigned during the web devel
 ### Task 5 Weather App
 
 ![Weather App](Screenshots/Weather.PNG)
+![Weather App](Screenshots/Weather%202.PNG)
