@@ -488,8 +488,9 @@ footer .text span a:hover {
   section .content{
     width: 85%;
   }
-}
-@media (max-width: 1000px) {
+  .navbar-light .navbar-toggler-icon {
+    background-color: white !important;
+  }
   .about .about-details{
     justify-content: center;
     flex-direction: column;
@@ -507,24 +508,14 @@ footer .text span a:hover {
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
-}
-@media (max-width: 900px) {
   .about .left img{
     height: 350px;
     width: 350px;
   }
-}
-
-@media (max-width: 750px) {
   nav .navbar{
     width: 90%;
   }
-  .home .text-two{
-    font-size: 65px;
-  }
-  .home .text-three{
-    font-size: 35px;
-  }
+  
   .skills .skills-details{
     align-items: center;
     justify-content: center;
@@ -546,14 +537,12 @@ footer .text span a:hover {
   .contact .text{
     width: 100%;
 }
-}
 
-@media (max-width: 500px){
   .home .text-two{
-    font-size: 55px;
+    font-size: 15px !important;
   }
   .home .text-three{
-    font-size: 33px;
+    font-size: 15px !important;
   }
   .about-details .col-md-4 {
     justify-content: center;
@@ -561,9 +550,7 @@ footer .text span a:hover {
       .svg-icon {
       margin-bottom: 5px;
     }
-}
-@media (max-width: 576px) {
-  .svg-icon {
+      .svg-icon {
     width: 50px;
     height: 50px;
     position: relative;
@@ -586,4 +573,50 @@ footer .text span a:hover {
 .home .social-links a:hover {
     transform: scale(1.2);
 }
+
+
+.home .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
+
+.home .text-one {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.home .text-two {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .text-three {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.home .pre-style {
+  white-space: pre;
+}
+
+.home .pre-style:hover {
+  color: #00277c;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.home .img-fluid {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+}
+
