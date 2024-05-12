@@ -132,6 +132,7 @@ nav .navbar {
 .navbar .nav-item .nav-link:hover::before {
   width: 100%; 
 }
+
 /* home */
 .home {
   height: 100vh;
@@ -193,7 +194,7 @@ nav .navbar {
   height: 300px;
   border-radius: 50%;
   margin-bottom: 20px;
-  margin-right: 50px;
+  margin-right: px;
 }
 
 .home .home-circle {
@@ -488,9 +489,24 @@ footer .text span a:hover {
   section .content{
     width: 85%;
   }
-  .navbar-light .navbar-toggler-icon {
-    background-color: white !important;
+  .about-p{
+    line-height: 1.5;
+    color: #ffffff;
+    border: 2px solid pink;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: smaller;
+  
   }
+  .about-topic{
+    font-size: medium;
+  }
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>') !important;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+      }
   .about .about-details{
     justify-content: center;
     flex-direction: column;
@@ -515,7 +531,12 @@ footer .text span a:hover {
   nav .navbar{
     width: 90%;
   }
-  
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
   .skills .skills-details{
     align-items: center;
     justify-content: center;
@@ -537,12 +558,11 @@ footer .text span a:hover {
   .contact .text{
     width: 100%;
 }
-
   .home .text-two{
-    font-size: 15px !important;
+    font-size: 15px;
   }
   .home .text-three{
-    font-size: 15px !important;
+    font-size: 15px;
   }
   .about-details .col-md-4 {
     justify-content: center;
@@ -550,73 +570,56 @@ footer .text span a:hover {
       .svg-icon {
       margin-bottom: 5px;
     }
-      .svg-icon {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin-bottom: 5px;
-  }
-  .skills .col-md-3 {
-    flex: 0 0 0%; 
-    max-width: 50%;
-  }
-  .home .social-links {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-  }
 
-  .home .social-links a {
-    display: inline-block;
-    margin: 0 5px;
-  }
-.home .social-links a:hover {
-    transform: scale(1.2);
-}
-
-
-.home .text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.home .text-one {
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-}
-
-.home .text-two {
-  color: rgb(255, 255, 255);
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  font-size: 50px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-
-.home .text-three {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  font-weight: 600;
-  margin-left: 3px;
-}
-
-.home .pre-style {
-  white-space: pre;
-}
-
-.home .pre-style:hover {
-  color: #00277c;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
+    .home .home-content {
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  
+    .home .home-circle {
+      order: 1;
+      margin: 0 0 20px 0 !important;
+    }
+  
+    .home .text {
+      order: 2;
+      align-items: center !important;
+      text-align: center;
+    }
+    
 .home .img-fluid {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 20px;
-  margin-right: 50px;
+  margin-right: px;
 }
+.about .img-fluid{
+  height: 150px;
+  width: 150px;
 }
 
+.projects-details .card {
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.projects img{
+  max-width: 40%;
+  height: auto;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+.projects-details .card .card-body {
+  padding: 10px;
+  border-radius: 12px;
+  text-align: justify;
+}
+  }
