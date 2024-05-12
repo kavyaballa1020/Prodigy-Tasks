@@ -260,7 +260,6 @@ section p{
   text-align: justify;
 }
 
-
 /* about section */
 .about .img-fluid {
   width: 400px;
@@ -317,14 +316,20 @@ section p{
   align-items: center;
 }
 
-.skills .svg-icon:hover {
+/*.skills .svg-icon:hover {
+  transform: scale(1.1); 
+  box-shadow: 2px 2px 2px 1px rgba(246, 181, 160, 0.459);
+} */
+.svg-icon:hover {
   transform: scale(1.1); /* Increase size on hover */
+  filter: brightness(1.2); /* Increase brightness */
+  box-shadow: 0 0 10px rgba(231, 212, 212, 0.447); /* Add shadow on hover */
+  border: 2px solid rgba(188, 191, 4, 0.833);
+
 }
 
-/* Reset hover effect for other elements */
-.skills .row:not(:last-child) .col-md-3:hover .svg-icon {
-  transform: none;
-}
+
+
 
 .skills .row {
   display: flex;
