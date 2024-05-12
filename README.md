@@ -14,7 +14,7 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 ### Task 3 Tic-Tac-Toe Web application
 
-![Task 3 Screenshot](Screenshots/Tic Tac Toe.PNG)
+![Task 3 Screenshot](Screenshots/Tic%20Tac%20Toe.PNG)
 
 ### Task 4 Personal Portfolio website
 
