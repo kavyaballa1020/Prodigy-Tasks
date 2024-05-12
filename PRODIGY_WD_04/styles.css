@@ -309,13 +309,23 @@ section p{
   width: 80px;
   height: 80px;
   padding: 12px;
-  border: 2px solid rgb(240, 135, 135);
+  border: 2px solid rgba(240, 135, 135, 0.833);
   border-radius: 16px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.skills .svg-icon:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Reset hover effect for other elements */
+.skills .row:not(:last-child) .col-md-3:hover .svg-icon {
+  transform: none;
+}
+
 .skills .row {
   display: flex;
   flex-wrap: wrap;
@@ -328,6 +338,7 @@ section p{
   max-width: 25%;
   text-align: center;
 }
+
 
 /* Projects section */
 .projects-details .card {
