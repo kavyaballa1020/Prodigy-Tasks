@@ -10,7 +10,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: #ffffff;
+  background: url('https://wallpapers.com/images/featured/dark-5u7v1sbwoi6hdzsb.jpg');
 }
 
 /* Scrollbar styles */
@@ -58,7 +58,7 @@ body{
 .navbar .navbar-brand {
   font-weight: 100;
   font-size: 40px;
-  color: #0a065e;
+  color: #ffffff;
   font-family: "Allura", cursive;
   padding: 8px 0;
   transition: all 0.3s ease;
@@ -102,7 +102,7 @@ nav .navbar {
 
 .navbar .nav-item .nav-link{
   position: relative;
-  color: #0b0756;
+  color: #ffffff;
   display: inline-block;
   line-height: 1.5;
   text-align: center;
@@ -123,7 +123,7 @@ nav .navbar {
   left: 0;
   width: 0;
   height: 5px;
-  background-color: #0c183a;
+  background-color: #feffff;
   transition: width 0.3s ease-in-out;
 }
 
@@ -131,7 +131,6 @@ nav .navbar {
   width: 100%; 
 }
 
-/* home section styling */
 .home {
   height:100vh;
   width: 100%;
@@ -150,17 +149,17 @@ nav .navbar {
 }
 .home .text-one{
   font-size: 25px;
-  color:rgb(255, 128, 0);
+  color:rgb(255, 81, 0);
 }
 .home .text-two{
-  color:rgb(4, 4, 113);
+  color:rgb(255, 255, 255);
   text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
   font-size: 50px;
   font-weight: 600;
   margin-left:-3px;
 }
 .home .text-three{
-  color: rgb(11, 133, 240);
+  color: rgb(245, 3, 197);
   font-size:50px;
   font-weight: 600;
   margin-left: 3px;
