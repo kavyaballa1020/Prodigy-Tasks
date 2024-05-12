@@ -149,35 +149,38 @@ nav .navbar {
 }
 .home .text-one{
   font-size: 25px;
-  color:rgb(255, 81, 0);
+  color:rgb(255, 255, 255);
+  margin-right: 1000px;
+
 }
 .home .text-two{
   color:rgb(255, 255, 255);
   text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
   font-size: 50px;
   font-weight: 600;
-  margin-left:-3px;
+  margin-right: 1000px;
+
 }
 .home .text-three{
-  color: rgb(245, 3, 197);
+  color: rgb(255, 255, 255);
   font-size:50px;
   font-weight: 600;
-  margin-left: 3px;
+  margin-right: 1000px;
 }
 
 .home .pre-style {
   white-space: pre;
 }
 .home .pre-style:hover{
-  color: #0a065e;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  color: #00ffee;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.593);
 }
 
 .home .img-fluid{
-  width: 200px;
-  height:200px;
+  width: 400px;
+  height:400px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-left: 1000px;
 }
 
 .home .social-links {
@@ -195,10 +198,10 @@ nav .navbar {
   transition: transform 0.3s ease;
   font-size: 20px;
 }
-.github-link { color: #24292e; }
-.linkedin-link { color: #0077b5; }
-.facebook-link { color: #3b5998; }
-.instagram-link { color: #833AB4; }
+.github-link { color: #f7f8fa; }
+.linkedin-link { color: #ffffff; }
+.facebook-link { color: #ffffff; }
+.instagram-link { color: #ffffff; }
 
 .home .social-links a:hover {
   transform: scale(1.2);
@@ -262,7 +265,6 @@ section p{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-right: 1rem;
 }
 .about{
   padding: 50px 0;
