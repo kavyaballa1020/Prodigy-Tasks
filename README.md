@@ -6,7 +6,7 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 ### Task 1 Responsive Landing Page
 
-![Task 1 Screenshot](LANDING PAGE.PNG)
+![Task 1 Screenshot](Screenshots/LANDING%20PAGE.PNG)
 
 ### Task 2 Stopwatch Web Application
 
@@ -14,7 +14,7 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 ### Task 3 Tic-Tac-Toe Web application
 
-![Task 3 Screenshot](Screentshots/Tic Tac Toe.PNG)
+![Task 3 Screenshot](Screenshots/Tic Tac Toe.PNG)
 
 ### Task 4 Personal Portfolio website
 
